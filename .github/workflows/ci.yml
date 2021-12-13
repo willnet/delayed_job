@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, rails7-ci ]
   pull_request:
     branches: [ master ]
 
