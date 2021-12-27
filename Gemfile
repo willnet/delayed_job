@@ -10,8 +10,6 @@ platforms :ruby do
   else
     gem 'sqlite3'
   end
-
-  gem 'net/smtp' if ENV['RAILS_VERSION'] == 'ruby-head'
 end
 
 platforms :jruby do
