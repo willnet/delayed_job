@@ -37,10 +37,6 @@ module YAML
   def load_dj(yaml)
     # See https://github.com/dtao/safe_yaml
     # When the module is there, we need to load our YAML like this...
-    if Object.const_defined?(:SafeYAML)
-      load(yaml, :safe => false)
-    elsif respond_to?(:unsafe_load) # psych >= 3.3.2
-      unsafe_load(yaml)
-    end
+    respond_to?(:unsafe_load) ? load(yaml, :safe => false) : load(yaml)
   end
 end
