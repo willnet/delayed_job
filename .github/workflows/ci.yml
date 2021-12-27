@@ -70,6 +70,7 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+        bundler: 2.2.31
     - name: Run tests
       env:
         RAILS_VERSION: ${{ matrix.rails_version }}
