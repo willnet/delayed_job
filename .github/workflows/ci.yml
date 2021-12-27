@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ruby: [2.7, 3.0, ruby-head]
+        ruby: [2.7, 3.0, 3.1, ruby-head]
         rails_version:
           - '7.0.0'
           - 'edge'
