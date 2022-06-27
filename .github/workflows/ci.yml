@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ rails-7-0-3 ]
   pull_request:
     branches: [ master ]
 
@@ -16,7 +16,8 @@ jobs:
         rails_version:
           - '6.0.0'
           - '6.1.0'
-          - '7.0.0'
+          - '7.0.2'
+          - '7.0.3'
           - 'edge'
         include:
           # Rails 5.2
